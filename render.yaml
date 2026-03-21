@@ -1,0 +1,19 @@
+name: apartment-grocery-backend
+services:
+  - type: web
+    name: apartment-grocery-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: DATABASE_URL
+        scope: run
+        value: ${DATABASE_URL}
+      - key: NODE_ENV
+        scope: run
+        value: production
+      - key: PORT
+        scope: run
+        value: 5000

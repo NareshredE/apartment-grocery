@@ -1,0 +1,10 @@
+{
+  "name": "apartment-grocery-backend",
+  "description": "Grocery ordering system backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
+}
